@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card:headers and footers,equl height ,hover</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <article class="rounded-xl shadow-sm p-6 overflow-hidden flex 
+       flex-col transition duration-300 ease-over hover:-translate-y-2
+       hover:shadow-lg
+       ">
+       <header class="border flex items-center justify-between">
+          <h2>Basic version</h2>
+       </header>
+         <div class="p-6 space-y-3 flex-1">
+            <p class="text-xl">Rs.1000/-</p>
+         </div>
+        <footer class="border-t px-6 py-4 flex justify-end gap-3">
+          <button class="px-4 py-2 rounded border hover:bg-gray-500 transition">Details</button>
+          <button class="px-4 py-2 rounded border hover:bg-gray-500 transition">Purchase</button>
+        </footer>
+       </article>
+        <article class="rounded-xl shadow-sm p-6 overflow-hidden flex 
+       flex-col transition duration-300 ease-over hover:-translate-y-2
+       hover:shadow-lg
+       ">
+       <header class="border flex items-center justify-between">
+          <h2 >Intermediate version</h2>
+          <p class="flex-grow text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa earum, saepe facere repellendus ab architecto quia quidem quae aperiam, enim esse. Commodi dicta magnam quia ea cumque similique, unde in.
+          Mollitia maiores quod commodi officiis cumque possimus dignissimos quo eum nihil quia obcaecati blanditiis tempore odio sit, architecto deleniti dolore debitis ad vitae recusandae fugit minus placeat rerum maxime. Dolores .</p>
+       </header>
+         <div class="p-6 space-y-3 flex-1">
+            <p class="text-xl">Rs.1000/-</p>
+         </div>
+        <footer class="border-t px-6 py-4 flex justify-end gap-3 mt-auto">
+          <button class="px-4 py-2 rounded border hover:bg-gray-500 transition">Details</button>
+          <button class="px-4 py-2 rounded border hover:bg-gray-500 transition">Purchase</button>
+        </footer>
+       </article>
+    </section>
+</body>
+</html>
