@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-        </div>
+        
     </nav>
     <script>
         const menuBtn=document.getElementById("menuBtn");
@@ -47,7 +47,7 @@
             mobileMenu.classList.toggle("hidden");
             mobileMenu.classList.toggle("block");
             const expanded = menuBtn.getAttribute("aria-expanded")=== "true";
-            menuBtn.setAttribute("aria-expanded",string(!expanded));
+            menuBtn.setAttribute("aria-expanded",String(!expanded));
         });
     </script>
 </body>
