@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay:dim-background</title>
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="max-w-4xl mx-auto p-6 space-y-8">
+     <h1 class="text-2x font-bold ">Overlay text background</h1>
+     <section class="border rounded p-6 ">
+        <div class="grid md:grid-cols-2 gap-6">
+           <div class="h-32 rounded bg-[linear-gradient(135deg,rgb(255,107,107),rgb(128,128,0))]">
+            card1
+           </div>
+           <div class="h-32 rounded bg-[linear-gradient(135deg,#191970,rgb(128,128,0))]">
+            card2
+           </div>
+           <div class="h-32 rounded bg-[linear-gradient(135deg,rgb(255,107,107),#191970)]">
+            card3
+           </div>
+           <div class="h-32 rounded bg-[linear-gradient(135deg,#008080,rgb(128,128,0))]">
+            card4
+           </div>
+           <p class="mt-4 text-lg">
+              This is content behind overlay.
+           </p>
+        </div>
+     </section>
+     <div id="overlay" class=" fixed inset-0 z-50 flex items-center justify-center bg-black/0 backdrop-blur-sm"><!--black works from 50 to 100-->
+          <div class="w-[min(520px,92vw)] bg-white rounded p-6 shadow-lg">
+            <h2 class="text-lg font-bold ">My Model Window</h2>
+            <p class="text-sm mt-2">Here is My 2nd Model</p>
+            <div>
+            <button id="closebtw" class="px-4 py-2 rounded border hover:bg-red-500 transition ml-100">close</button>
+          </div>
+          </div>
+          
+     </div>
+    </main>  
+    <script>
+        const closebtw=document.getElementById("closebtw");
+        closebtw.addEventListener("click",()=>{
+            overlay.classList.toggle("hidden");
+            const expanded = closebtw.getAttribute("aria-expanded")=== "true";
+            closebtw.setAttribute("aria-expanded",String(!expanded));
+        });
+        overlay.addEventListener('click',(e)=>{
+            if(e.target === overlay){
+             overlay.classList.remove('flex');
+             overlay.classList.add('hidden');
+            }
+        });
+        // const overlay=document.getElementById('overlay')
+        // document.getElementById('closebtw').addEventListener('click',()=>{
+        //     overlay.classList.remove('flex');
+        //     overlay.classList.remove('hidden');
+        // });
+    </script>  
+</body>
+</html>
