@@ -4,3 +4,6 @@ function greet(name){           //declaration
    console.log("Hello",name)    //defination
 }
  //greet("Jeevan")                //calling
+
+
+ 
