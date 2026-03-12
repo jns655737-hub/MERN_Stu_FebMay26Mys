@@ -1,5 +1,7 @@
 const list=document.getElementById("list");
 let count=1;
+const hey=document.getElementById("hey")
+ hey.textContent="";
 
 document.getElementById("addBtn").
   addEventListener("click",
@@ -8,7 +10,7 @@ document.getElementById("addBtn").
     li.textContent="Item"+count++;
     list.append(li);
   })
-
+ 
   document.getElementById("rmBtn").
   addEventListener("click",
     function(){
@@ -21,10 +23,4 @@ document.getElementById("addBtn").
             hey.innerHTML="there is no item to remove";
         }
   })
-  document.getElementById("rmBtn").
-  addEventListener("click",
-    function(){
-        if(hey.lastElementChild){
-    hey.removeChild(hey.innerHTML);
-        }
-  })
+ 
