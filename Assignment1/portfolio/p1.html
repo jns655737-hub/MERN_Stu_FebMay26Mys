@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+
+#home{
+    text-align: center ;
+    padding: 10px;
+    background-color: lightgray;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:chartreuse;
+    padding: 10px 30px;
+}
+.logo{
+    color: bisque;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.profile-img{
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.Cta-button{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#about{
+    padding: 20px;
+    background-color: lightskyblue;
+}
+#skills{
+    padding: 20px;
+    background-color:bisque ;
+}
+#projects{
+    padding: 20px;
+    background-color: orchid;
+}
+#contact{
+    padding: 30px;
+    background-color: gray;
+}
+.skills-grid{
+    display: flex;
+    gap: 20px;
+}
+.skill-card{
+    background-color: hotpink;
+    padding: 25px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 200px;
+}
+.project-container{
+    margin-top: 20px;
+}
+.project-content{
+    padding: 20px;
+    border: 1px solid goldenrod;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 1px solid aquamarine;
+}
+th, td{
+    padding: 10px;
+    text-align:center;
+}
+.contact-form{
+    max-width: 400px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+input, select{
+    width: 100%;
+    padding: 8px;
+}
+.submit-btn{
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <header>
+        <!-- Flexbox layout-->
+        <nav>
+            <a href="#home" class="logo">Jeevan N S</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Jeevan N S</h1>
+        <img src="c:\Users\hruth\OneDrive\Pictures\WhatsApp Image 2025-08-04 at 23.08.42_71f38852.jpg" alt="My photo" class="profile-img">
+        <p> Software developer <br>MERN stack|DevOps</p>
+        <a href="#contact" class="Cta-button">Contact Me</a>
+    </section>
+    <!-- Account section-->
+    <section id="about">
+        <h2>About Me</h2>
+        <article class="about">
+            <h3>Full stack Developer</h3>
+            <p>Expirienced in web dev and hosting. Specialized in Finance-domain projects</p>
+            <div class="tags">
+                <span class="tags"> Backend: NodeJS</span>
+                <span class="tags"> DB :Optimization
+
+                </span>
+            </div>
+        </article>
+    </section>
+    <!-- Skills-->
+     <section id="skills">
+        <h3> Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>MERN Stack</h4>
+                <p>ReactJS,NodeJS, EpressJS, MangoDB</p>
+            </div>
+        </div>
+     </section>
+     <!-- project-->
+     <section id="projects">
+        <h3>My projects</h3>
+        <div class="project-container">
+            <div class="project-content">
+                <h4>gola</h4>
+                <p>Rapid way to book a cab hassle free</p>
+                <a href="https://www.gola.com" target="_blank">View</a>
+            </div>
+        </div>
+     </section>
+     <table>
+        <thead><tr>
+            <th>Project</th>
+            <th colspan="2">Technology</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <td>AWS for hosting</td>
+                <td>MERN</td>
+                <td>Redis</td>
+            </tr>
+        </tbody>
+     </table>
+     <!-- contact-->
+      <section id="contact">
+        <h3>Contact Me</h3>
+        <form class="contact-form">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="name" required>
+                </div>
+                 <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                    <select name="type">
+                        <option value="fte">FTE</option>
+                        <option value="consultent">consultent</option>
+                    </select>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </section>
+</body>
+</html>
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#HOME" class="logo">G1</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Flexbox Layout: hero section -->
+    <section id="home" class="hero">
+        <h1>JEEVAN</h1>
+        <img src="myphoto.jpg" alt="my photo" class="profile-img">
+        <p>Software developer <br>Mern Stack|Devops</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
+    </section>
+    <!-- about section -->
+    <section id="about">
+        <h2>About ME</h2>
+        <article class="about">
+           <h3>Full Stack Developer</h3>
+           <p>Experienced in Webdevelopment and hoisting.
+              Specialized in Finance-Domain Project. 
+           </p>
+           <div class="tags">
+               <span class="tag">Backend:NodeJS</span>
+               <span class="tag">DB:optimization</span>
+           </div>
+        </article>
+    </section>
+    <!-- Skills  -->
+    <section id="skills">
+           <h3>My Skills</h3>
+           <div class="skills-grid">
+             <div class="skill-card">
+               <h4>Mern Stack</h4>
+               <p>ReactJS,NodeJS,ExpressJS,MongoDB</p>
+             </div>
+           </div>
+    </section>
+    <!-- My Projects -->
+    <section id="projects">
+        <h3>My Projects</h3>
+        <div class="project-container">
+            <div class="project-content">
+                <h4>gola</h4>
+                <p>Rapid way to book a cab hassle free</p>
+                <a href="https://wikipedia.org" target="_blank">View</a>
+            </div>
+        </div>
+        <table>
+            <thead><tr>
+                <th>Project</th>
+                <th colspan="2">Technology</th>
+            </tr></thead>
+            <tbody>
+                <tr>
+                    <td>AWS hosting</td>
+                    <td>Mern</td>
+                    <td>Redis</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- Contact me -->
+     <section id="contact">
+       <h3>Contact</h3>
+       <form class="contact-form">
+        <fieldset>
+            <legend>Contact form</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="textbox" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="name" id="name" placeholder="email" required>
+            </div>
+            <div class="form-group">
+               <select name="type" >
+                <option value="fte">FTE</option>
+                <option value="consultant">Consultant</option>
+               </select>
+            </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">send</button>
+       </form>
+     </section>
+</body>
+</html>
