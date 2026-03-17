@@ -28,8 +28,6 @@ loadUser(function(){
     loadOrders(function(){
         loadPayments(function(){
             loadShipment()
-        })
-    })
-
-    
+        });
+    });
 });
