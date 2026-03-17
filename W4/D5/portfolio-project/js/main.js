@@ -5,5 +5,7 @@ document.addEventListener("DOMContentLoaded",function(){
     initContactValidation();
     initThemeToggle();
     initLocation();
-    renderprojects();
+    renderProjects();
+    chatBots();
+    alertMessage();
 })

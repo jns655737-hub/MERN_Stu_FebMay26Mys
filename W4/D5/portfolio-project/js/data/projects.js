@@ -5,7 +5,7 @@ const projectsData = [
     category: "MERN",
     description:
       "Full stack movie ticket booking application with AI-powered smart movie suggestions.",
-    technologies: ["ReactJS", "ExpressJS", "MongoDB"],
+    technologies: ["ReactJS", "ExpressJS"],
     status: "Live",
     liveDemo: "#",
     github: "#"
@@ -16,7 +16,7 @@ const projectsData = [
     category: "MERN",
     description:
       "Cab booking platform that helps users quickly book rides for daily travel.",
-    technologies: ["ReactJS", "ExpressJS", "MongoDB"],
+    technologies: ["ReactJS", "ExpressJS"],
     status: "Live",
     liveDemo: "#",
     github: "#"
