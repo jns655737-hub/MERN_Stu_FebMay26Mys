@@ -1,10 +1,10 @@
 //Reduce function 
 //sum
-let nums=[5,10,15];
+// let nums=[5,10,15];
 
-let total=nums.reduce((intermediateSum,current)=>
-intermediateSum+current,0);
-console.log(total);
+// let total=nums.reduce((intermediateSum,current)=>
+// intermediateSum+current,0);
+// console.log(total);
 
 
 // Average
@@ -16,9 +16,9 @@ console.log(total);
 //reduce to object count by categeory
 let items=["pen","pencil","eraser","pen"];
 
-let count=items.reduce((intermediatevalue,items)=>{
-    intermediatevalue[items]=
-    (intermediatevalue[items]||0)+1;
+let count=items.reduce((intermediatevalue,item)=>{
+    intermediatevalue[item]=
+    (intermediatevalue[item]||0)+1;
     return intermediatevalue;
 },{});
 console.log("items count:",count);

@@ -5,3 +5,5 @@ npm init -y
 echo "Project created in $(pwd)"
 # node package manager(npm)
 # present working directry(pwd)
+
+

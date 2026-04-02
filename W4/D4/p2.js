@@ -1,7 +1,8 @@
 const translations={
-    kn:{title:" ಕನ್ನಡ",desc:"ಸ್ವಪಥ  ಕನ್ನಡ" },
+    kn:{title:" ಸ್ವಪಥ",desc:"ಸ್ವಪಥ  ಕನ್ನಡ" },
     en:{title:"Welcome",desc:"This is a local information"},
-    hi:{title:"हिन्दी",desc:"स्वागत हे स्थिरकृता "}
+    hi:{title:"स्वागत",desc:"स्वागत हे स्थिरकृता "},
+    pu:{title:"ਨਮਸਕਾਰ",desc:"ਪੰਜਾਬੀ ਨਮਸਕਾਰ"}
 }
 const title=document.getElementById("title");
 const desc=document.getElementById("desc");

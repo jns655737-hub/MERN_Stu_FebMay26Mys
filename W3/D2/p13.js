@@ -17,7 +17,7 @@ function varfunctionScoped(){
             var x=40;
         }
         console.log("x:",x);
-        console.log("y:",y);
+        // console.log("y:",y);
         
 }
 varfunctionScoped()
