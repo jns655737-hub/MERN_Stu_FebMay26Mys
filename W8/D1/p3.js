@@ -1,18 +1,27 @@
-//Applied filters to the query using comparision operters
+//Applied filters to the query using comparision 
 const mongoose =require("mongoose")
 
-async function runFilterDemo() {
-    try{
-        await mongoose.connect("mongodb://127.0.0.1:27017/merntrainig");//to connect with DB
-        console.log("MongoDB connected successfully");
 
-        const productSchema = new mongoose.Schema({
+const productSchema = new mongoose.Schema({
                         name:String,
                         price:Number,
                         categeory:String,
                         status:String
                     });
         const Product =mongoose.models.Product || mongoose.model("Product",productSchema);
+
+async function runFilterDemo() {
+    try{
+        await mongoose.connect("mongodb://127.0.0.1:27017/merntrainig");//to connect with DB
+        console.log("MongoDB connected successfully");
+
+        // const productSchema = new mongoose.Schema({
+        //                 name:String,
+        //                 price:Number,
+        //                 categeory:String,
+        //                 status:String
+        //             });
+        // const Product =mongoose.models.Product || mongoose.model("Product",productSchema);
 
         await Product.create([{
                 name:"Soap",
@@ -57,3 +66,5 @@ async function runFilterDemo() {
         }
 }
 runFilterDemo();
+
+module.exports=Product;
