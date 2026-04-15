@@ -14,7 +14,7 @@ function withdrawCourse(enrolledCourses, userName, courseId) {
         //  If not enrolled
         if (courseIndex === -1) {
             const msg = chalk.red("You are not enrolled in this course");
-            emitter.emit("operationFailed", msg);
+            // emitter.emit("operationFailed", msg);
             return reject(msg);
         }
 
@@ -27,7 +27,7 @@ function withdrawCourse(enrolledCourses, userName, courseId) {
         );
 
         // Emit success event
-        emitter.emit("courseWithdrawn", successMsg);
+        // emitter.emit("courseWithdrawn", successMsg);
 
         resolve(successMsg);
     });

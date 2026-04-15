@@ -19,7 +19,7 @@ function completeLesson(enrolledCourses, userName, courseId, lessonName) {
         }
 
         // Prevent duplicate lesson completion
-        if (course.lesson.completed.includes(lessonName)) {
+        if (course.completed.includes(lessonName)) {
             return reject("Lesson already completed");
         }
 

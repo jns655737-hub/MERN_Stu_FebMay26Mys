@@ -8,7 +8,7 @@ function enrollCourse(userName, course) {
     return new Promise((resolve, reject) => {
 
         // Emit event: enrollment started
-        emitter.emit("enrollmentStarted", course.title);
+        // emitter.emit("enrollmentStarted", course.title);
 
         setTimeout(() => {
 
@@ -44,7 +44,7 @@ function enrollCourse(userName, course) {
             enrolledCourses.push(enrollment);
 
             // Emit success event
-            emitter.emit("enrollmentConfirmed", course.title);
+            // emitter.emit("enrollmentConfirmed", course.title);
 
             resolve(`Successfully enrolled in ${course.title}`);
 
